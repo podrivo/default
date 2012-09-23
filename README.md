@@ -1,5 +1,5 @@
 # default
-Basic skeleton of a site.
+Basic site skeleton.
 
 ## Author
 Pedro Ivo Hudson
