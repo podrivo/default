@@ -2,12 +2,7 @@ default
 =======
 Basic default site structure.
 
-
-# Usage
-Just use it.
-
-
-# Author
+## Author
 Pedro Ivo Hudson
 
 + http://github.com/podrivo
