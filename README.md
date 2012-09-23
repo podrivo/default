@@ -1,9 +1,8 @@
-default
-=======
-Basic default site structure.
+# default
+Basic skeleton of a site.
 
 ## Author
 Pedro Ivo Hudson
 
-+ http://github.com/podrivo
 + http://pedroivo.com/
++ http://github.com/podrivo
