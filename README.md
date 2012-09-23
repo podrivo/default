@@ -1,19 +1,14 @@
 default
 =======
-
 Basic default site structure.
 
 
-Usage
------
-
+# Usage
 Just use it.
 
 
-Author
------
-
-**Pedro Ivo Hudson**
+# Author
+Pedro Ivo Hudson
 
 + http://github.com/podrivo
-+ http://cabrones.org/
++ http://pedroivo.com/
