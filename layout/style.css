@@ -1,32 +1,16 @@
 @charset "utf-8";
-/*
-**	Author: Pedro Ivo Hudson
-**	Author URI: http://pedroivo.com/
-**	Created: June, 2012
-*/
 
-/***** Reset - http://meyerweb.com/eric/tools/css/reset/ - v2.0 | 20110126 *****/
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}:focus{outline:0}*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+/* http://meyerweb.com/eric/tools/css/reset/ - v2.0 | 20110126 */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 
-/***** HTML *****/
+/* HTML */
+*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
 html {height:100%; text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased;}
-body {height:100%; background:#FFF; color:#FFF; font:12px/20px 'Schoolbell', sans-serif;}
-::-moz-selection {color:#FFF; background:#F90;}
-::selection {color:#FFF; background:#F90;}
+body {height:100%; background:#FFF; color:#FFF; font:12px/20px 'Arial', sans-serif;}
+::-moz-selection {background:#F90; color:#FFF;}
+::selection {background:#F90; color:#FFF;}
 a {color:#FFF; text-decoration:none;}
 a:hover {color:#FFF; text-decoration:underline;}
 
-/***** Misc *****/
-h1, h2, #menu li a {background:url(sprite.png) no-repeat; text-indent:-99999px; display:block;}
-h2 {position:absolute; top:50%; left:50%;}
-
-/***** Menu *****/
-#menu {}
-#menu li {float:left;}
-#menu li a {float:left;}
-
-/***** Content *****/
-#content {}
-
-/***** Footer *****/
-#footer {}
+/* Misc */
+h1 {background:url(sprite.png) no-repeat; text-indent:-999999px; display:block;}
