@@ -11,3 +11,7 @@ body {height:100%; background:#FDF6E3; color:#002B36; font:700 16px/22px 'Georgi
 ::selection {background:#268BD2; color:#FDF6E3;}
 a {color:#002B36; opacity:.7; text-decoration:underline;}
 a:hover, a:focus {color:#002B36; opacity:.99; text-decoration:underline;}
+
+.cf:before, .cf:after {content:""; display:table;}
+.cf:after {clear:both;}
+.cf {zoom:1;}
