@@ -4,5 +4,5 @@ Basic site skeleton.
 ## Author
 Pedro Ivo Hudson
 
-+ http://pedroivo.com/
++ http://podrivo.com/
 + http://github.com/podrivo
