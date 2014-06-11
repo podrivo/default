@@ -1,4 +1,4 @@
-# Code
+# Design, Frontend
 
 * Pedro Ivo Hudson - podrivo.com
 * Belo Horizonte, MG - Brazil
