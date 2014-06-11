@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         options: {
           separator:';'
         },
-          src: ['assets/js/name.js'],
+          src: ['assets/js/functions.js', 'assets/js/plugin.js'],
           dest: 'assets/js/global.js'
       },
       css: {
