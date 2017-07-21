@@ -1,6 +1,13 @@
 # default
 Basic site skeleton.
 
+## Usage
+Run `install` with npm.
+
+```
+[sudo] npm install --force
+```
+
 ## Author
 Pedro Ivo Hudson
 
