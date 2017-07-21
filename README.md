@@ -24,3 +24,10 @@ Run `install` with yarn.
 + [Homebrew](https://brew.sh/)
 + [node.js](https://nodejs.org/en/)
 + [Yarn](https://yarnpkg.com/)
+
+## Author
+Pedro Ivo Hudson — @podrivo
+
++ http://podrivo.com/
++ http://github.com/podrivo
++ http://twitter.com/podrivo
