@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "https://github.com/podrivo/default.git",
   "author": "Pedro Ivo Hudson <ivo.pedro@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^3.3.0"
+  }
 }
