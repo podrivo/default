@@ -1,8 +1,26 @@
 # default
 Basic site skeleton.
 
-## Author
-Pedro Ivo Hudson
+## Usage
+Install [Homebrew](https://brew.sh/).
 
-+ http://podrivo.com/
-+ http://github.com/podrivo
+```
+[sudo] /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+Install [Yarn](https://yarnpkg.com/). This also installs [node.js](https://nodejs.org/en/).
+
+```
+[sudo] brew install yarn
+```
+
+Run `install` with yarn.
+
+```
+[sudo] yarn install
+```
+
+## Technology
++ [Homebrew](https://brew.sh/)
++ [node.js](https://nodejs.org/en/)
++ [Yarn](https://yarnpkg.com/)
