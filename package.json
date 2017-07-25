@@ -4,8 +4,11 @@
   "description": "Basic site skeleton.",
   "main": "index.js",
   "repository": "https://github.com/podrivo/default.git",
-  "author": "Pedro Ivo Hudson <ivo.pedro@gmail.com>",
+  "author": "Pedro Ivo Hudson <hello@podrivo.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "webpack"
+  },
   "dependencies": {
     "webpack": "^3.3.0"
   }
