@@ -14,7 +14,8 @@ module.exports = function(config, log, error, success) {
       ui: {
         port: 8001
       },
-      open: false
+      open: false,
+      notify: false
     });
 
     gulp.watch(config.fonts.src, ['fonts', reload]);

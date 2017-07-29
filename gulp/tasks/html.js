@@ -9,10 +9,10 @@ var notifyError = require('../notify/error.js');
 module.exports = function(config, log, error, success) {
   gulp.task('html', function() {
     return gulp.src(config.html.src)
+      .pipe(pug({}))
       .pipe(plumber({
         errorHandler: error
       }))
-      .pipe(pug())
       .pipe(gulp.dest(config.html.dest))
       .pipe(browserSync.stream())
       .pipe(plumber.stop());
