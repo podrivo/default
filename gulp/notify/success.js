@@ -1,9 +1,7 @@
 var gulp = require('gulp');
-var notify = require('gulp-notify');
+var gutil = require('gulp-util');
 
 module.exports = function () {
-    notify({
-        title: '🍟 YAY!',
-        message: 'Tasks completed!'
-    }).write('./');
+  var msg = gutil.colors.bgBlack(' ✨  ') + gutil.colors.black.bgGreen(' Finished building! ');
+  console.log(msg);
 };

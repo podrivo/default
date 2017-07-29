@@ -14,48 +14,42 @@ var log = require('../log/log.js');
 var notifyError = require('../notify/error.js');
 
 module.exports = function(config, log, error, success) {
-    gulp.task('styles:lint', function() {
-        return gulp.src(config.styles.lint.src)
-            .pipe(plumber({
-                errorHandler: error
-            }))
-            .pipe(log({
-                header: 'Styles lint:'
-            }))
-            .pipe(sassLint())
-            .pipe(sassLint.format())
-            .pipe(sassLint.failOnError())
-            .pipe(plumber.stop());
-    });
+  gulp.task('styles:lint', function() {
+    return gulp.src(config.styles.lint.src)
+      .pipe(plumber({
+        errorHandler: error
+      }))
+      .pipe(sassLint())
+      .pipe(sassLint.format())
+      .pipe(sassLint.failOnError())
+      .pipe(plumber.stop());
+  });
 
-    gulp.task('styles:build', function() {
-        return gulp.src(config.styles.build.src)
-            .pipe(plumber({
-                errorHandler: error
-            }))
-            .pipe(log({
-                header: 'Styles build:'
-            }))
-            .pipe(sass({
-                includePaths: ['./node_modules/bourbon-neat/core'],
-                noCache: true
-            }).on('error', error))
-            .pipe(mmq({
-                log: true
-            }))
-            .pipe(postCss([autoprefixer({
-                browsers: ['last 2 version']
-            })]))
-            .pipe(concat('main.min.css'))
-            .pipe(cleanCss({
-                level: 0
-            }))
-            .pipe(gulp.dest(config.styles.build.dest))
-            .pipe(browserSync.stream())
-            .pipe(plumber.stop());
-    });
+  gulp.task('styles:build', function() {
+    return gulp.src(config.styles.build.src)
+      .pipe(plumber({
+        errorHandler: error
+      }))
+      .pipe(sass({
+        includePaths: ['./node_modules/bourbon-neat/core'],
+        noCache: true
+      }).on('error', error))
+      .pipe(mmq({
+        log: true
+      }))
+      .pipe(postCss([autoprefixer({
+        browsers: ['last 2 version']
+      })]))
+      .pipe(concat('main.min.css'))
+      .pipe(cleanCss({
+        level: 0
+      }))
+      .pipe(gulp.dest(config.styles.build.dest))
+      .pipe(browserSync.stream())
+      .pipe(plumber.stop());
+  });
 
-    gulp.task('styles', function(callback) {
-        runSequence('styles:lint', 'styles:build', callback);
-    });
+  gulp.task('styles', function(callback) {
+    runSequence('styles:lint', 'styles:build', callback);
+  });
 };

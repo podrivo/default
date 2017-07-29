@@ -1,10 +1,7 @@
 var gulp = require('gulp');
-var notify = require('gulp-notify');
+var gutil = require('gulp-util');
 
 module.exports = function(error) {
-    notify.onError({
-        title: '🚨 FAILED',
-        message: error.message.split('\n\nStack Trace:\nundefined')[0],
-    })(error);
-    this.emit('end');
+  var msg = gutil.colors.bgBlack(' ⚠️  ') + gutil.colors.yellow(error.message.split('\n\nStack Trace:\nundefined')[0]);
+  console.log(msg);
 };
