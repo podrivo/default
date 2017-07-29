@@ -5,7 +5,7 @@ var reload = browserSync.reload;
 
 module.exports = function(config, log, error, success) {
   gulp.task('watch', function() {
-    var msg = gutil.colors.bgBlack(' 🔄  ') + gutil.colors.black.bgGreen(' Start syncing. ');
+    var msg = gutil.colors.bgBlack(' 🔄  ') + gutil.colors.black.bgGreen(' Syncing is on. Use URLs below to access.');
     console.log(msg);
 
     browserSync.init({
