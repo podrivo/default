@@ -7,15 +7,12 @@
   "author": "Pedro Ivo Hudson <hello@podrivo.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack --watch"
+    "start": ""
   },
   "dependencies": {
     "browser-sync": "^2.18.13",
-    "browser-sync-webpack-plugin": "^1.2.0",
     "css-loader": "^0.28.4",
-    "extract-text-webpack-plugin": "^3.0.0",
     "node-sass": "^4.5.3",
-    "sass-loader": "^6.0.6",
-    "webpack": "^3.3.0"
+    "sass-loader": "^6.0.6"
   }
 }
