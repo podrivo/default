@@ -24,7 +24,11 @@ var config = {
       ]
     },
     'build': {
-      'src': ['./src/js/vendor/jquery.js', './src/js/vendor/plugins.js', './src/js/**/*.js'],
+      'src': [
+        './src/js/vendor/**/*.js',
+        './src/js/plugins/**/*.js',
+        './src/js/**/*.js'
+      ],
       'dest': './dist/js'
     }
   },
