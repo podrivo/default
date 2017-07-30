@@ -37,7 +37,6 @@ module.exports = function(config, log, error, success) {
         errorHandler: error
       }))
       .pipe(sass({
-        includePaths: ['./node_modules/bourbon-neat/core'],
         noCache: true
       }).on('error', error))
       .pipe(mmq({
