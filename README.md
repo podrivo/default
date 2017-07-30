@@ -1,5 +1,7 @@
 # default
-Basic site skeleton.
+Basic site skeleton. Worry about doing it.
+
+`yarn` `gulp` `pug` `sass` `postcss` `browsersync`
 
 ## Installation
 Install [Homebrew](https://brew.sh/).
@@ -29,7 +31,7 @@ Run `start` with yarn.
 
 Access URLs:
 + Local site: [localhost:8000](http://localhost:8000/)
-+ Browsersync options:[localhost:8001](http://localhost:8001/).
++ Browsersync options: [localhost:8001](http://localhost:8001/).
 + You can use your local network for external access. Check your terminal for URLs.
 
 ## Technology
