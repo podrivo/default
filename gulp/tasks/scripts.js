@@ -15,8 +15,8 @@ module.exports = function(config, log, error, success) {
       .pipe(plumber({
         errorHandler: error
       }))
-      // .pipe(eslint())
-      // .pipe(eslint.format())
+      .pipe(eslint())
+      .pipe(eslint.format())
       .pipe(plumber.stop());
   });
 
