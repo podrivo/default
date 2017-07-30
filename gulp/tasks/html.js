@@ -9,7 +9,9 @@ var notifyError = require('../notify/error.js');
 module.exports = function(config, log, error, success) {
   gulp.task('html', function() {
     return gulp.src(config.html.src)
-      .pipe(pug({}))
+      .pipe(pug({
+        pretty: true
+      }))
       .pipe(plumber({
         errorHandler: error
       }))
