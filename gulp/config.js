@@ -34,7 +34,7 @@ var config = {
   },
   'styles': {
     'lint': {
-      'src' : [
+      'src': [
         './src/css/**/*.{css,scss,sass}'
       ]
     },
