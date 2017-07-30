@@ -31,12 +31,12 @@ var config = {
   'styles': {
     'lint': {
       'src' : [
-        './src/css/**/*.{css,scss}'
+        './src/css/**/*.{css,scss,sass}'
       ]
     },
     'build': {
       'src': [
-        './src/css/**/*.{css,scss}'
+        './src/css/**/*.{css,scss,sass}'
       ],
       'dest': './dist/css'
     }

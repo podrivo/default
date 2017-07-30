@@ -19,7 +19,13 @@ module.exports = function(config, log, error, success) {
       .pipe(plumber({
         errorHandler: error
       }))
-      .pipe(sassLint())
+      .pipe(sassLint({
+        rules: {
+          'single-line-per-selector': 0,
+          'property-sort-order': 0,
+          'force-pseudo-nesting': 0
+        }
+      }))
       .pipe(sassLint.format())
       .pipe(sassLint.failOnError())
       .pipe(plumber.stop());

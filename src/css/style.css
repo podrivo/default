@@ -1,10 +1,4 @@
-/* HTML */
-html {
-	font-smoothing: antialiased;
-	text-rendering: optimizeLegibility;
-}
-
-body {
-	background: #fff;
-	color: #000;
+html, body {
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
