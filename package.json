@@ -1,7 +1,7 @@
 {
   "name": "default",
   "version": "3.0.0",
-  "description": "Basic site skeleton.",
+  "description": "Basic site skeleton. Worry about doing it.",
   "main": "gulpfile.js",
   "repository": "https://github.com/podrivo/default.git",
   "author": "Pedro Ivo Hudson <hello@podrivo.com> (http://podrivo.com)",
