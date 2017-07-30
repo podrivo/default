@@ -42,6 +42,7 @@ Access URLs:
 + [Sass](http://sass-lang.com/)
 + [PostCSS](http://postcss.org/)
 + [Autoprefixer](https://github.com/postcss/autoprefixer/)
++ [Eric Meyer CSS Reset](https://meyerweb.com/eric/tools/css/reset/)
 
 ## Author
 Pedro Ivo Hudson — @podrivo
