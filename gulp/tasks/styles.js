@@ -23,7 +23,9 @@ module.exports = function(config, log, error, success) {
         rules: {
           'single-line-per-selector': 0,
           'property-sort-order': 0,
-          'force-pseudo-nesting': 0
+          'force-pseudo-nesting': 0,
+          'no-color-keywords': 0,
+          'no-color-literals': 0
         }
       }))
       .pipe(sassLint.format())
