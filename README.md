@@ -29,6 +29,9 @@ Run `start` with yarn.
 [sudo] yarn start
 ```
 
++ You can use write CSS in `.css, .scss, .sass`.
++ There's a global css file, `/css/global.scss` and a components folder `/css/components`.
+
 Access URLs:
 + Local site: [localhost:8000](http://localhost:8000/)
 + Browsersync options: [localhost:8001](http://localhost:8001/).
