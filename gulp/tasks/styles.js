@@ -25,7 +25,8 @@ module.exports = function(config, log, error, success) {
           'property-sort-order': 0,
           'force-pseudo-nesting': 0,
           'no-color-keywords': 0,
-          'no-color-literals': 0
+          'no-color-literals': 0,
+          'no-css-comments': 0
         }
       }))
       .pipe(sassLint.format())
