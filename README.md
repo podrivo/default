@@ -30,7 +30,7 @@ Run `start` with yarn.
 ```
 
 + You can use write CSS in `.css, .scss, .sass`.
-+ There's a global css file, `/css/global.scss` and a components folder `/css/components`.
++ There's a global css file `/css/global.scss` and a components folder `/css/components/`.
 
 Access URLs:
 + Local site: [localhost:8000](http://localhost:8000/)
