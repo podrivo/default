@@ -9,6 +9,7 @@ var postCss = require('gulp-postcss');
 var runSequence = require('run-sequence');
 var sass = require('gulp-sass');
 var sassLint = require('gulp-sass-lint');
+var sassGlob = require('gulp-sass-glob');
 
 var log = require('../log/log.js');
 var notifyError = require('../notify/error.js');
@@ -36,12 +37,13 @@ module.exports = function(config, log, error, success) {
 
   gulp.task('styles:build', function() {
     return gulp.src(config.styles.build.src)
-      .pipe(plumber({
-        errorHandler: error
-      }))
+      .pipe(sassGlob())
       .pipe(sass({
         noCache: true
       }).on('error', error))
+      .pipe(plumber({
+        errorHandler: error
+      }))
       .pipe(mmq({
         log: true
       }))
@@ -58,6 +60,6 @@ module.exports = function(config, log, error, success) {
   });
 
   gulp.task('styles', function(callback) {
-    runSequence('styles:lint', 'styles:build', callback);
+    runSequence('styles:lint', ['styles:build'], callback);
   });
 };

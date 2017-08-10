@@ -40,7 +40,7 @@ var config = {
     },
     'build': {
       'src': [
-        './src/css/**/*.{css,scss,sass}'
+        './src/css/main.scss'
       ],
       'dest': './dist/css'
     }
