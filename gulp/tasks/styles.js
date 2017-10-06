@@ -28,7 +28,8 @@ module.exports = function(config, log, error, success) {
           'no-color-keywords': 0,
           'no-color-literals': 0,
           'no-css-comments': 0,
-          'force-element-nesting': 0
+          'force-element-nesting': 0,
+          'no-transition-all': 0
         }
       }))
       .pipe(sassLint.format())
