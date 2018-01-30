@@ -22,6 +22,6 @@ module.exports = function(config, log, error, success) {
     gulp.watch(config.html.src, ['html', reload]);
     gulp.watch(config.images.src, ['images', reload]);
     gulp.watch(config.scripts.build.src, ['scripts', reload]);
-    gulp.watch(config.styles.build.src, ['styles', reload]);
+    gulp.watch(config.styles.lint.src, ['styles', reload]);
   });
 };
