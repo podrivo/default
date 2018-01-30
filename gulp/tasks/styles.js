@@ -30,7 +30,8 @@ module.exports = function(config, log, error, success) {
           'no-css-comments': 0,
           'force-element-nesting': 0,
           'no-transition-all': 0,
-          'leading-zero': 0
+          'leading-zero': 0,
+          'no-vendor-prefixes': 0
         }
       }))
       .pipe(sassLint.format())
