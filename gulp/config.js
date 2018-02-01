@@ -25,7 +25,7 @@ var config = {
     },
     'build': {
       'src': [
-        './src/js/vendor/**/*.js',
+        './src/js/vendors/**/*.js',
         './src/js/plugins/**/*.js',
         './src/js/**/*.js'
       ],
