@@ -19,8 +19,8 @@ Run `start` with npm.
 [sudo] npm start
 ```
 
-+ You can use write CSS in `.css, .scss, .sass`.
-+ There's a global css file `/css/global.scss` and a components folder `/css/components/`.
++ You can write CSS in `.css, .scss, .sass`.
++ There's a global file `/css/global.scss` and a components folder `/css/components/`.
 
 Access URLs:
 + Local site: [localhost:8000](http://localhost:8000/)
