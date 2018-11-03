@@ -1,36 +1,26 @@
 # default
 Basic site skeleton. Worry about doing it.
 
-`yarn` `gulp` `pug` `sass` `postcss` `browsersync`
+`gulp` `pug` `sass` `postcss` `browsersync`
 
 ## Installation
-Install [Homebrew](https://brew.sh/).
+Install [node.js](https://nodejs.org/).
+
+Run `install` with npm.
 
 ```
-[sudo] /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
-Install [Yarn](https://yarnpkg.com/). This also installs [node.js](https://nodejs.org/en/).
-
-```
-[sudo] brew install yarn
-```
-
-Run `install` with yarn.
-
-```
-[sudo] yarn install
+[sudo] npm install
 ```
 
 ## Usage
-Run `start` with yarn.
+Run `start` with npm.
 
 ```
-[sudo] yarn start
+[sudo] npm start
 ```
 
-+ You can use write CSS in `.css, .scss, .sass`.
-+ There's a global css file `/css/global.scss` and a components folder `/css/components/`.
++ You can write CSS in `.css, .scss, .sass`.
++ There's a global file `/css/global.scss` and a components folder `/css/components/`.
 
 Access URLs:
 + Local site: [localhost:8000](http://localhost:8000/)
@@ -38,9 +28,7 @@ Access URLs:
 + You can use your local network for external access. Check your terminal for URLs.
 
 ## Technology
-+ [Homebrew](https://brew.sh/)
-+ [node.js](https://nodejs.org/en/)
-+ [Yarn](https://yarnpkg.com/)
++ [node.js](https://nodejs.org/)
 + [Gulp](https://gulpjs.com/)
 + [Browsersync](https://browsersync.io/)
 + [Pug](https://pugjs.org/)
